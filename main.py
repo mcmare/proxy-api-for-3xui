@@ -31,7 +31,7 @@ DEFAULT_FLOW = "xtls-rprx-vision"  # Протокол для клиента
 
 # Параметры для строки подключения VLESS
 VLESS_CONFIG = {
-    "host": "jh.mcmare.ru",
+    "host": "example.com", #Поменять на свой хост
     "port": "443",
     "type": "tcp",
     "security": "reality",
