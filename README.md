@@ -16,7 +16,7 @@ DEFAULT_FLOW = "xtls-rprx-vision" (Протокол по умолчанию)
 
 port=22548 (Порт Прокси API по умолчанию)
 
-В файле присутствуют два эндпоинта, "add-user" добавляет пользователя на 30 дней, "add-test-user" на 1 день
+В файле присутствуют два эндпоинта, "/proxy/add-client" добавляет пользователя на 30 дней, "/proxy/add-test-client" на 1 день
 
 ```bash
 pip install -r requirements.txt
