@@ -206,5 +206,9 @@ async def proxy_add_test_client(payload: AddClientPayload):
 
         return response
 
+@app.get("/")
+def proxy():
+    print("Proxy API for 3XUI. https://github.com/mcmare/proxy-api-for-3xui")
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=22548)
