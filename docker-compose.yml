@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  proxy_api_for_3xui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Или, если образ уже готов:
+    # image: your_python_app_image
+    ports:
+      - "8000:22548" # Пример: пробросить порт 8000
+    volumes:
+      - .:/app # Пример: монтировать текущую директорию в /app в контейнере
+    working_dir: /app
+    command: python main.py
